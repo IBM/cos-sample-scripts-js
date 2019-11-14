@@ -1,0 +1,34 @@
+{
+    "root": true,
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "rules": {
+        "max-len": [2, 150, 4],
+        "no-param-reassign": [2, {
+            "props": false
+        }],
+        "no-plusplus": 0,
+        "no-new": 0,
+        "no-underscore-dangle": 0,
+        "no-unused-expressions": 0,
+        "prefer-rest-params": 0,
+        "prefer-promise-reject-errors": 0,
+        "prefer-arrow-callback": 0,
+        "func-names": 0,
+        "comma-dangle": 0,
+        "import/no-extraneous-dependencies": 0,
+        "no-console": ["off", { "allow": ["warn", "error", "info"] }],
+        "no-unused-vars": "warn"
+    }
+}

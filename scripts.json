@@ -1,0 +1,22 @@
+{
+  "scripts": [
+    {
+      "name": "standardBucketOperations",
+      "type": "Nodejs",
+      "buildInfo": {
+        "fileName": "src/standardBucketOperations.js",
+        "author": "COS UI - Offering Squad",
+        "shortDescription": "A Sample script for the standard bucket S3 operations"
+      }
+    },
+    {
+      "name": "archiveBucketOperations",
+      "type": "Nodejs",
+      "buildInfo": {
+        "fileName": "src/archiveBucketOperations.js",
+        "author": "COS UI - Offering Squad",
+        "shortDescription": "A Sample script for the archive bucket S3 operations"
+      }
+    }
+  ]
+}

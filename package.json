@@ -1,0 +1,49 @@
+{
+  "name": "cos-sample-scripts-js",
+  "version": "0.0.1",
+  "description": "This repo contains sample scripts to help users use IBM Cloud Object Storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gulp lint",
+    "build": "gulp build -a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM/cos-sample-scripts-js"
+  },
+  "keywords": [
+    "cos",
+    "nodejs",
+    "templates",
+    "api",
+    "s3",
+    "iam",
+    "hmac",
+    "cloud object storage"
+  ],
+  "author": "Yogi Vijay",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ibm-cos-sdk": "^1.5.1",
+    "ibm-cos-sdk-config": "^1.0.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0",
+    "require-dir": "^1.2.0",
+    "rollup": "^1.7.0",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^4.0.1"
+  }
+}
