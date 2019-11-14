@@ -7,7 +7,7 @@ export const getS3 = async (endpoint, serviceCredential) => {
     /*
        * Cloud Object Storage S3 can be access via two types of credentials. IAM/HMAC
        * An IAM APIKey can be used to create an S3 Object as below.
-       * The APIKey, IAM Auth url, S3 endpoint and resource Instance Id are required
+       * The APIKey, S3 endpoint and resource Instance Id are required
        */
     s3Options = {
       apiKeyId: serviceCredential.apikey,

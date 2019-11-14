@@ -9,6 +9,25 @@
   * - npm i ibm-cos-sdk
   * - npm i request-promise
   * - node <scriptName>
+  *
+  * ========= Example Configuration =========
+  * export default {
+  *   useHmac: false,
+  *   bucketName: 'testbucketname',
+  *   serviceCredential: {
+  *     "apikey": "XXXXXXXX",
+  *     "cos_hmac_keys": {
+  *       "access_key_id": "XXXXXXXXX",
+  *       "secret_access_key": "XXXXXXXX"
+  *     },
+  *     "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+  *     "iam_apikey_description": "Auto-generated for key XXXXXX-XXXX-XXXX-XXXX",
+  *     "iam_apikey_name": "Service credentials-2",
+  *     "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+  *     "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/XXXXXXXX::serviceid:ServiceId-XXXXX-XXXXX-XXXXX",
+  *     "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/XXXXXXXX:XXXXX-XXXXX-XXXXX-XXXX::"
+  *   },
+  * };
   */
 
 // ========= Configuration =========
@@ -27,7 +46,7 @@ const getS3 = async (endpoint, serviceCredential) => {
     /*
        * Cloud Object Storage S3 can be access via two types of credentials. IAM/HMAC
        * An IAM APIKey can be used to create an S3 Object as below.
-       * The APIKey, IAM Auth url, S3 endpoint and resource Instance Id are required
+       * The APIKey, S3 endpoint and resource Instance Id are required
        */
     s3Options = {
       apiKeyId: serviceCredential.apikey,
