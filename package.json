@@ -39,7 +39,7 @@
     "gulp-eslint": "^5.0.0",
     "gulp-if": "^2.0.2",
     "gulp-util": "^3.0.8",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "require-dir": "^1.2.0",
     "rollup": "^1.7.0",
     "rollup-plugin-commonjs": "^9.2.1",
